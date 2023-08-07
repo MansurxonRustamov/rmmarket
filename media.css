@@ -42,6 +42,9 @@
 	.card{
 		width: 135px;
 	}
+	.sideBar{
+		padding-top: 150px;
+	}
 }
 @media only screen and (max-width: 513px) {
 
