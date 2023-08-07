@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif;
+	user-select: none;
+}
+.red{
+	color: crimson!important;
+	transition: .5s ease;
+	transform: scale(1.2);
+	filter: drop-shadow(0 0 4px crimson);
+}
+.container{
+	max-width: 90%;
+	margin: auto;
+}
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Scrollbar */
+nav{
+	width: 100%;
+	position: fixed;
+	height: 80px;
+	box-shadow: 0 0 3px 2px #999;
+	background: #fff;
+	z-index: 10;
+}
+nav .container{
+	display: flex;
+	justify-content: space-around;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+	float: right;
+}
+nav ul li{
+	margin: 23px 10px;
+}
+nav ul li:first-child{
+	margin: 5px 10px !important;
+}
+nav ul li a{
+	color: #333;
+	font-size: 20px;
+	text-decoration: none;
+	padding:5px 10px;
+	border-radius: 5px;
+	transition: .5s ease;
+}
+nav ul li input{
+	margin: 15px 10px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	width: 400px;
+	border:none;
+	outline: none;
+	font-size: 23px;
+	border: 2px solid #999;
+	color: grey;
+}
+.logo h1{
+	font-size: 37px;
+	color: #444;
+	margin: 15px 10px;
+}
+nav ul li a:hover{
+	background: #999;
+	color: #fff;
+}
+.resD{
+	display: none;
+}
+.resD a i{
+	font-size: 35px;
+	padding-top: 5px;
+	color: grey;
+}
+.resD a:hover{
+	background: #fff;
+}
+
+.inpSe{
+	position: absolute;
+	top: 26px;
+	right: 18px;
+	font-size: 21px;
+	color: grey;
+}
+.products{
+	margin-top: 70px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	margin-left: 280px;
+	gap: 10px;
+	
+}
+.card{
+	width: 220px;
+	height: 400px;
+	margin: 10px 0;
+	box-shadow:0 0 3px 2px #999;
+	border-radius: 15px;
+	background: #fff;
+}
+.productImg{
+	width: 100%;
+	overflow: hidden;
+}
+.productImg img{
+	width: 100%;
+	transition: .5s ease;
+	cursor: pointer;
+	border-radius: 15px;
+	height: 235px;
+}
+.productImg img:hover{
+	filter: brightness(0.8);
+}
+.productBody h3{
+	color: #333;
+	padding: 3px;
+}
+.productBody .rank {
+	color: #333;
+	padding: 3px;
+}
+.productBody .rank i{
+	color: #FFD800FF;
+}
+.productBody p{
+	font-size: 23px;
+	font-weight: bold;
+	color: grey;
+	position: absolute;
+	bottom: 15px;
+	left: 5px;
+}
+.pre{
+	position: relative;
+}
+.pab{
+	position: absolute;
+}
+.buyBtn{
+	bottom: 15px;
+	right: 15px;
+}
+.buyBtn button{
+	padding: 1px 7px;
+	color: #333;
+	border: none;
+	border-radius: 10px;
+	font-size: 21px;
+	cursor: pointer;
+	transition: .5s ease;
+}
+.buyBtn button:hover{
+	background: #999;
+}
+.likeProduct{
+	top: 5px;
+	right: 10px;	
+}
+.likeProduct i{
+font-size: 21px;
+	color: grey;
+	cursor: pointer;
+}
+.namePro{
+	color: #fff;
+	background: #222;
+	padding: 1px 3px;
+	border-radius: 5px;
+	bottom: 8px;
+	right: 0;
+}
+
+/* Sidebar */
+.closeBtn{
+	right: 20px;
+	font-size: 25px;
+	color: grey;
+	cursor: pointer;
+	transition: .5s ease;
+	padding: 5px 10px;
+	display: none;
+}
+.closeBtn:hover{
+	background: #AFAFAF5B;
+	border-radius: 10px;
+}
+.filterBar{
+	position: fixed;
+	left: 7px;
+	top: 90px;
+	cursor: pointer;
+	padding: 5px 10px;
+	transition: .5s ease;
+	border-radius: 5px;
+	display: none;
+	z-index: 1;
+}
+.filterBar:hover{
+	background: #AAAAAA50;
+	color: #fff;
+}
+.filterBar i{
+	color: grey;
+	font-size: 25px;
+}
+.sideBar{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+	width: 300px;
+	height: 100vh;
+	z-index: 9;
+	overflow: auto;
+	padding: 100px 30px 0 30px;
+	overflow-y: scroll;
+	box-shadow: 0 0 3px 2px grey;
+	transition: 1s ease;
+	transform: translateX(0);
+}
+
+.filter{
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease;
+	padding: 2px 5px;
+	border-radius: 5px;
+}
+.filter:hover{
+	background: #AFAFAF80;
+}
+.inR{
+	margin-left: 10px;
+	transition: .5s ease;
+}
+.inR p{
+	cursor: pointer;
+	transition: .5s ease;
+	padding: 3px 5px;
+	color: grey;
+	display: block;
+	border-left: 2px solid grey;
+}
+.inR p:hover{
+	background: #AFAFAF80;
+	border-radius: 5px;
+}
+/* Menu Bar */
+.menubg{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: #00000060;
+	z-index: 100;
+	transform: translateX(100%);
+	transition: .5s ease;
+
+}
+.menuBar{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	width: 300px;
+	height: 100vh;
+	z-index: 9;
+	padding: 100px 30px 0 30px;
+	overflow-y: scroll;
+	box-shadow: 0 0 3px 2px grey;
+	transition: 1s ease;
+}
+.menuBar li{
+	list-style: none;
+	transition: .5s ease;
+	margin: 20px 0;
+}
+.menuBar li a{
+	text-decoration: none;
+	color: grey;
+	font-size: 20px;
+	transition: .5s ease;
+	padding: 5px 10px;
+	border-bottom: 3px solid grey;
+}
+.menuBar li i{
+	margin-right: 7px;
+}
+.menuBar li a:hover{
+	background: grey;
+	color: #fff;
+	border-radius: 5px;
+}
+.menuBar .footI{
+	bottom: 0;
+	right: 15px;
+}
+.menuBar li:first-child{
+	position: absolute;
+	top: 30px;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+.menuBar li:first-child a{
+	font-size: 45px;
+	font-weight: bold;
+	border-bottom: none;
+}
+.menuBar li:first-child a:hover{
+	background: #fff;
+	color: grey;
+	border-bottom: none;
+}
+.menuBar .closeBtn1{
+	right: 20px;
+	font-size: 25px;
+	color: grey;
+	cursor: pointer;
+	transition: .5s ease;
+	padding: 5px 10px;
+	top: 10px;
+}
+.closeBtn1:hover{
+	background: #AFAFAF5B;
+	border-radius: 10px;
+}
+
+/* End Menu Bar */

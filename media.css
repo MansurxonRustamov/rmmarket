@@ -1,0 +1,88 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 610px) {
+	.logo {
+		display: none;
+	}
+}
+@media only screen and (max-width: 538px) {
+	.card{
+		width: 180px;
+	}
+	.productBody h3{
+	font-size: 18px;
+	}
+	.productBody .rank {
+		color: #333;
+		padding: 3px;
+	}
+	.productBody .rank i{
+		color: #FFD800FF;
+	}
+	.productBody p{
+		font-size: 18px;
+	}
+
+}
+@media only screen and (max-width: 439px) {
+	.card{
+		width: 150px;
+	}
+	.sideBar{
+		width: 100%;
+	}
+	.menuBar{
+		width: 100%;
+	}
+	
+}
+@media only screen and (max-width: 390px) {
+	.card{
+		width: 135px;
+	}
+}
+@media only screen and (max-width: 513px) {
+
+	.products{
+		display: grid;
+		grid-template-columns:50% 50%;
+	}
+	.logo{
+		display: none;
+	}
+	nav ul li input{
+		width: 100%;
+	}
+
+	
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1093px) {
+	.sideBar{
+		transform: translateX(-100%);
+	}
+	.products{
+		margin-left: 25px;
+	}
+	.resS{
+		display: none;
+	}
+	.resD{
+		display: inline-block;
+	}
+	.filterBar{
+		display: inline-block;
+	}
+
+}
+@media only screen and (min-width: 1093px) {
+	.sideBar{
+		transform: translateX(0)!important;
+	}
+	.closeBtn{
+		display: none!important;
+	}
+}
