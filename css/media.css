@@ -28,7 +28,7 @@
 }
 @media only screen and (max-width: 439px) {
 	.card{
-		width: 150px;
+		width: 220px;
 	}
 	.sideBar{
 		width: 100%;
@@ -36,20 +36,28 @@
 	.menuBar{
 		width: 100%;
 	}
+	.products{
+		grid-template-columns: 100%!important;		
+	}
+	.carD1{
+		display: flex;
+		justify-content: center!important;
+	}
 	
 }
 @media only screen and (max-width: 390px) {
 	.card{
-		width: 135px;
+		width: 220px!important;
+	}
+	.products{
+		grid-template-columns: 100%!important;		
 	}
 	.sideBar{
 		padding-top: 150px;
 	}
 }
 @media only screen and (max-width: 513px) {
-
 	.products{
-		display: grid;
 		grid-template-columns:50% 50%;
 	}
 	.logo{
