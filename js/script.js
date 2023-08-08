@@ -19,6 +19,7 @@ likeProduct.forEach(item=>{
 })
 filterBtn.addEventListener("click", ()=>{
 	openSideBar(sideBar, closeBtn)
+	console.log(sideBar)
 })
 closeBtn.addEventListener("click", ()=>{
 	closeSideBar(sideBar)
