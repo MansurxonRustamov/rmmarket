@@ -12,6 +12,9 @@
 	transform: scale(1.2);
 	filter: drop-shadow(0 0 4px crimson);
 }
+.fa-bars{
+	cursor: pointer;
+}
 .container{
 	max-width: 90%;
 	margin: auto;
@@ -85,6 +88,10 @@ nav ul li input{
 	color: #444;
 	margin: 15px 10px;
 }
+.logo h1 a{
+	text-decoration: none;
+	color: #444;
+}
 nav ul li a:hover{
 	background: #999;
 	color: #fff;
@@ -109,7 +116,7 @@ nav ul li a:hover{
 	color: grey;
 }
 .products{
-	margin-top: 70px;
+	margin-top: 30px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 	margin-left: 280px;
@@ -351,5 +358,161 @@ font-size: 21px;
 	background: #AFAFAF5B;
 	border-radius: 10px;
 }
-
 /* End Menu Bar */
+
+
+/* Login Page */
+#login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.loginControl{
+	width: 300px;
+	min-height: 330px;
+	box-shadow: 0 0 3px 2px #999;
+	border-radius: 10px;
+	color: grey;
+	padding: 9px;
+}
+.loginControl h1{
+	text-align: center;
+	font-size: 30px;
+}
+
+.form-control{
+	width: 100%;
+	border-radius: 5px;
+	padding: 5px 10px;
+	outline: none;
+	border: 2px solid grey;
+	font-size: 22px;
+	margin: 5px 0 10px 0;
+}
+.formBtn{
+	padding: 5px 10px;
+	font-size: 22px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid grey;
+	background: #fff;
+	color: grey;
+	transition: .5s ease;
+	width: 100%;
+	margin-top: 10px;
+}
+.formBtn:hover{
+	background: grey;
+	color: #fff;
+	filter: drop-shadow(0 0 8px grey);
+}
+/* End Login PAge */
+
+/* Savat Page */
+#savat .container {
+	display: grid;
+	grid-template-columns: 65% 35%;
+}
+.wrapperCost{
+	width: 100%;
+	min-height: 100%;
+	box-shadow:0 0 3px 2px grey;
+	border-radius: 5px;
+	padding: 10px;
+}
+.wrapperCost p{
+	font-size: 21px;
+}
+.wrapperSavat{
+	width: 90%;
+	height:80vh ;
+	overflow: auto;
+	box-shadow:0 0 3px 2px grey;
+	border-radius: 5px;
+}
+.wrapperSavat h1{
+	font-size: 33px;
+	color: #555;
+	text-align: center;
+}
+.itemProduct{
+	height: 200px;
+	border-radius: 20px;
+	box-shadow: 0 0 3px 2px #999;
+	margin: 10px 20px;
+	display: flex;
+}
+.itemProduct .imgHead{
+	width: 40px;
+	height: 60px;
+}
+.itemProduct .imgHead img{
+	width: 176px;
+	height: 200px;
+	cursor: pointer;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.nameItem a{
+	text-decoration: none;
+	font-size: 23px;
+	color: #444;
+}
+.itemBtn{
+	right: 10px;
+	bottom: 10px;
+}
+.itemBtn button{
+	padding: 5px 10px;
+	border:2px solid grey;
+	background: #fff;
+	transition: .5s ease;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+.itemBtn button a{
+	color: grey;
+	text-decoration: none;
+	font-size: 18px;
+}
+.itemBtn button:first-child:hover{
+	background: crimson;
+	border:2px solid crimson;
+}
+.itemBtn button:first-child:hover a{
+	color: #fff;
+}
+.itemBtn button:nth-child(2):hover{
+	border:2px solid crimson;
+}
+.itemBtn button:nth-child(2):hover a{
+	color: crimson;
+	filter: drop-shadow(0 0 7px crimson);
+}
+.nameItem{
+	left: 186px;
+}
+.costRank{
+	bottom: 10px;
+	left: 186px;
+}
+.typ{
+	bottom:60px;
+	color: #999;
+	font-size: 20px;
+}
+.cost{
+	font-size: 24px;
+	color: #333;
+	font-weight: bold;
+}
+.djs{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+/* End Savat Page */
